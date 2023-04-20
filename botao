@@ -1,0 +1,24 @@
+import tkinter as tk
+
+def tocar_guitarra():
+    print("Tocando guitarra...")
+
+def tocar_bateria():
+    print("Tocando bateria...")
+
+def tocar_piano():
+    print("Tocando piano...")
+
+janela = tk.Tk()
+janela.title("Instrumentos musicais")
+
+botao_guitarra = tk.Button(janela, text="Guitarra", command=tocar_guitarra)
+botao_guitarra.pack()
+
+botao_bateria = tk.Button(janela, text="Bateria", command=tocar_bateria)
+botao_bateria.pack()
+
+botao_piano = tk.Button(janela, text="Piano", command=tocar_piano)
+botao_piano.pack()
+
+janela.mainloop()
